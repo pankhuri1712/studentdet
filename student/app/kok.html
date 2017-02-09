@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+<meta charset="UTF-8">
+  <title>detail</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href="./app.css" rel='stylesheet' type='text/css'>
+  <script src="./app.js"></script>
+</head>
+<body>
+ <div ng-controller="myController">
+<table border="3" width="50%" cellpadding="2" cellspacing="3">
+      <tr>
+      <th>    <h2>view </h2></th>
+     </tr>
+     <tr>
+          <th> name</th>
+          <th> emailids</th>
+<th> details</th>
+    </tr>
+     <tr ng-repeat="person in studentt">
+
+        <td>{{person.firstnamess}}</td>
+        <td>{{person.emailid}}</td>
+<td> <a href="display.html;"onclick= "display();"> {{person.viewdetails}}</a></td>	
+      </tr>
+</table>
+</div>
+</body>
+</html>

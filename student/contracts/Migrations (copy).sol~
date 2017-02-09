@@ -1,0 +1,28 @@
+pragma solidity ^0.4.2;
+
+contract student {
+ struct people{
+string firstname;
+string lastname;
+string email;
+uint age;
+uint phone;
+uint number;
+
+  }
+
+people[] public person;
+uint index;
+function add_person(string fname,string lname,string emaild,uint agee,uint phno) {
+people memory nperson;
+nperson.firstname=fname;
+nperson.lastname=lname;
+nperson.email=emaild;
+nperson.age=agee;
+nperson.phone=phno;
+nperson.number=index+1;
+}
+
+
+}
+
